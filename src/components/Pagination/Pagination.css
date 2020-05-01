@@ -1,0 +1,28 @@
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pagination li {
+  margin: 10px;
+  padding: 12px 16px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.Pagination li:hover {
+  background-color: violet;
+  color: white;
+  cursor: pointer;
+}
+
+.Pagination.disalbed {
+  color: grey;
+}
+
+.Pagination li.active {
+  font-weight: bold;
+  background-color: cornflowerblue;
+  color: white;
+}
