@@ -1,8 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Modal.css';
 
 function Modal({ children, onClose }) {
-  // 백드랍을 그릴때 스크롤 방지를 위해 body 스타일을 변경
+  /*
+   * 백드랍을 그릴때 스크롤바 방지를 위해 body 스타일을 변경
+   * 모달을 끌 땐 원상태로 복구
+   */
   React.useEffect(() => {
     document.body.style.overflowY = 'hidden';
     return () => (document.body.style.overflowY = 'auto');
@@ -20,5 +24,10 @@ function Modal({ children, onClose }) {
     </>
   );
 }
+
+Modal.propTypes = {
+  children: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
 
 export default Modal;
