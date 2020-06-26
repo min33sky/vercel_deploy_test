@@ -11,6 +11,7 @@
   z-index: 1000;
   background-color: white;
 }
+
 .Modal-backdrop {
   position: fixed;
   top: 0;
@@ -20,13 +21,17 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
+
 .Modal-body {
   min-height: 100px;
+  color: black;
 }
+
 .Modal-footer {
   margin-top: 32px;
   text-align: right;
 }
+
 .Modal-footer button {
   background: none;
   border: solid 1px lightgrey;
@@ -36,6 +41,7 @@
   border: cornflowerblue 1px solid;
   color: cornflowerblue;
 }
+
 .Modal-footer button:hover {
   cursor: pointer;
   background-color: cornflowerblue;

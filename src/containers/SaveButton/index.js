@@ -1,6 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import FooterButton from '../../components/FooterButton';
 
+/**
+ * 저장 버튼 컴포넌트
+ */
 function SaveButton() {
   const [fetch, setFetch] = useState(false);
 

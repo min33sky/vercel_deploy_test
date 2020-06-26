@@ -25,6 +25,7 @@ module.exports = {
     ],
   },
   plugins: [
+    // index.html 파일에 알아서 빌드된 js파일을 임포트 해준다.
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
